@@ -3,9 +3,9 @@
 ## ToDO List Assignment;
 > `JavaScript`  
 > `prompt`:  
->> These are the instructions for the tasks to be done by a group.  
+>> These are the instructions for the tasks to be done in a group.  
 
-TODO list: Assignment –create JS to accomplish the following:
+TODO `List`: Assignment – create JS to accomplish the following:
 - `query` for the `submit` button and input task field once in the beginning and store those two values in the variables submit and newTask.
 - `disable` the `submit` button by default. Enable/disable by setting its disabled attribute to false/true.
 - Listen for `input` to be typed into the input field
@@ -40,8 +40,8 @@ TODO list: Assignment –create JS to accomplish the following:
 ## DOM Rendering
 The images below shows how the page looks like in-browser with; `<button>` disabled by default, and the way it looks on accepting input.
 <p align="left">
-  <img align="center" src="./img/todo_1.png" title="Disabled" height="200" width="300" style="padding-right:10px;" />
-  <img align="center" src="./img/todo_2.png" title="Enabled" height="200" width="300" style="padding-right:10px;" />
+  <img align="center" src="./img/todo_1.png" title="Disabled" height="150" width="400" style="padding-right:100px;" />
+  <img align="center" src="./img/todo_2.png" title="Enabled" height="150" width="400" style="padding-right:100px;" />
 </p>
 
 ---
