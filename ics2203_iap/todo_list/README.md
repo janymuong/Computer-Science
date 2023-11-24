@@ -5,7 +5,7 @@
 > 
 >> Read the instructions below for the tasks to be done *in a group*.  
 
-`prompt`:  
+`Lecturer's prompt`:  
 TODO `List`: Assignment – create JS to accomplish the following:
 - Query for the `submit` button and input task field once in the beginning and store those two values in the variables submit and newTask.
 - Disable the `submit` `<button>` by default. Enable/disable by setting its `disabled` attribute to `false/true`.
@@ -19,7 +19,7 @@ TODO `List`: Assignment – create JS to accomplish the following:
 
 
 ## HTML
-> DOM manipulation is done on this markup.
+> `DOM` manipulation is done on this markup.
 ```html
 <!DOCTYPE html>
 <html lang="en">
