@@ -10,9 +10,9 @@ TODO `List`: Assignment – create JS to accomplish the following:
 - `disable` the `submit` button by default. Enable/disable by setting its disabled attribute to false/true.
 - Listen for `input` to be typed into the input field
 - Listen for submission of `form`
-- Find the task the user just submitted
+- Find the task the user just submitted.
 - Create a `list` item for the new task and add the task to it
-- Add new element to our unordered list
+- Add new element to our *unordered list* - `ul`.
 - At the end of the script, add the line return false. This prevents the default submission of the form which involves either reloading the current page or redirecting to a new one.  
 **Note**: create `HTML` elements using the `createElement` function. Add the elements to the `DOM` using the `append` function  
 
@@ -40,8 +40,8 @@ TODO `List`: Assignment – create JS to accomplish the following:
 ## DOM Rendering
 The images below shows how the page looks like in-browser with; `<button>` disabled by default, and the way it looks on accepting input.
 <p align="left">
-  <img align="center" src="./img/todo_1.png" title="Disabled" height="150" width="400" style="padding-right:100px;" />
-  <img align="center" src="./img/todo_2.png" title="Enabled" height="150" width="400" style="padding-right:100px;" />
+  <img align="center" src="./img/todo_1.png" title="Disabled" height="200" width="450" style="padding-right:100px;" />
+  <img align="center" src="./img/todo_2.png" title="Enabled" height="200" width="450" style="padding-right:100px;" />
 </p>
 
 ---
@@ -49,7 +49,7 @@ The images below shows how the page looks like in-browser with; `<button>` disab
 ```bash
 SCT211-0848/2018 - Jany Muong;
 SCT211-0002/2019 - Kimani Geoffrey Chege;
-SCT211-0057/2022 - Natasha Wangui Ndung'u;
+SCT211-0057/2022 - Natasha Wangui Ndung'u  ';
 SCT211-0081/2022 - IRKE KONZOLO;
 Sct211-0062/2022 - Kelvin Mwenda;
 ```
