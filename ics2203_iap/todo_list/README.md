@@ -53,5 +53,4 @@ SCT211-0002/2019 - Kimani Geoffrey Chege;
 SCT211-0057/2022 - Natasha Wangui Ndung'u  ';
 SCT211-0081/2022 - IRKE KONZOLO;
 SCT211-0062/2022 - Kelvin Mwenda;
-SCT211-0085/2022 - KITAVI DOUGLAS;
 ```
