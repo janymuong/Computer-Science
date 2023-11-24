@@ -3,23 +3,23 @@
 ## ToDO List Assignment;
 > `JavaScript`  
 > `prompt`:  
->> ```bash
-TODO list: Assignment –create JS to 
-accomplish the following:
-• `query` for the `submit` button and input task field once in the beginning and store those two values in the variables submit and newTask.
-• `disable` the `submit` button by default. Enable/disable by setting its disabled attribute to false/true.
-• Listen for `input` to be typed into the input field
-• Listen for submission of `form`
-• Find the task the user just submitted
-• Create a `list` item for the new task and add the task to it
-• Add new element to our unordered list
-• At the end of the script, add the line return false. This prevents the default submission of the form which involves either reloading the current page or redirecting to a new one.
-Note: create `HTML` elements using the createElement function. Add the elements to the `DOM` using the `append` function  
-```
+>> These are the instructions for the tasks to be done by a group.  
+
+TODO list: Assignment –create JS to accomplish the following:
+- `query` for the `submit` button and input task field once in the beginning and store those two values in the variables submit and newTask.
+- `disable` the `submit` button by default. Enable/disable by setting its disabled attribute to false/true.
+- Listen for `input` to be typed into the input field
+- Listen for submission of `form`
+- Find the task the user just submitted
+- Create a `list` item for the new task and add the task to it
+- Add new element to our unordered list
+- At the end of the script, add the line return false. This prevents the default submission of the form which involves either reloading the current page or redirecting to a new one.  
+**Note**: create `HTML` elements using the `createElement` function. Add the elements to the `DOM` using the `append` function  
+
 
 ## HTML
 > DOM manipulation is done on this markup.
-```html
+```bash
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -40,8 +40,8 @@ Note: create `HTML` elements using the createElement function. Add the elements 
 ## DOM Rendering
 The images below shows how the page looks like in-browser with; `<button>` disabled by default, and the way it looks on accepting input.
 <p align="left">
-  <img align="center" src="./img/todo_1.png" title="Disabled" height="100" width="150" style="padding-right:10px;" />
-  <img align="center" src="./img/todo_2.png" title="Enabled" height="100" width="150" style="padding-right:10px;" />
+  <img align="center" src="./img/todo_1.png" title="Disabled" height="200" width="300" style="padding-right:10px;" />
+  <img align="center" src="./img/todo_2.png" title="Enabled" height="200" width="300" style="padding-right:10px;" />
 </p>
 
 ---
