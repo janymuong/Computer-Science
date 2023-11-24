@@ -39,7 +39,7 @@ TODO `List`: Assignment – create JS to accomplish the following:
 ```
 
 ## DOM Rendering
-The images below each shows how the page looks like in-browser with; `<button>` disabled by default, and the way it looks on accepting input.
+The images below each shows how the page looks like in-browser with; `submit <input>` button disabled by default, and the way it looks on accepting input.
 <p align="left">
   <img align="center" src="./img/todo_1.png" title="Disabled" height="200" width="450" style="padding-right:100px;" />
   <img align="center" src="./img/todo_2.png" title="Enabled" height="200" width="450" style="padding-right:100px;" />
