@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>About me: My PROJECTS :)</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me: My PROJECTS :)</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
         <link rel="stylesheet" href="./css/cssfile.css">
         <script rel="text/javascript" src="./js/topbutton.js"></script>
-        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="Jany Muong" content="Mu-0">
 	</head>
     <header>
@@ -31,55 +33,72 @@
 		</div>
 		<!-- person image end -->
 
-		<!-- About Me section start -->
-		<div id="about">
-			<h1 class="aboutleft"><br>About Me: SHOWCASE</h1>
-                    <p>
-                        Hello, World! I am <strong>Jany</strong>. Coding has changed my world. And I am Amazing. These are my projects.
-                    </p>
-
-					<br/>
-
-			<!-- <p class="quote">"Voyaging through eons of thought, alone."</p> -->
-		</div>
+        <!-- GitHub Projects section start -->
+        <h1 id="show" class="aboutleft">SHOWCASE</h1>
         <hr class="hro"/>
-        <br/>
-        <br/>
-
-		<!-- About Me section end -->
-
-
-
-        <div>
-            <p>
-                <span>
-                    <blockquote>You can click on the <strong>Blogs</strong> navigation link (at the top) and you will be redirected to a blog page.</blockquote>
-                </span>
-                <button onclick="setupBackToTopButton()" id="back-btn" title="Navigate to TOP page">Take me to the TOP</button>
-            </p>
-            <br/><br/>
+        <div id="github-projects">
+            <h2>My GitHub Projects</h2>
+            <div id="projects-container"></div>
         </div>
+        <!-- GitHub Projects section end -->
+
+        <script>
+            $(document).ready(function () {
+                // github API URL - fetch repositories
+                var githubApiUrl = 'https://api.github.com/users/janymuong/repos';
+
+                // jQuery AJAX
+                $.ajax({
+                    url: githubApiUrl,
+                    dataType: 'json',
+                    success: function (data) {
+                        const numProjectsToDisplay = 5;
+
+                        for (let i = 0; i < numProjectsToDisplay && i < data.length; i++) {
+                            let repo = data[i];
+                            let projectCard = '<div class="project-card">';
+                            projectCard += '<h3>' + repo.name + '</h3>';
+                            projectCard += '<img src="./img_icons/github-dark.svg" alt="GitHub Icon">';
+                            projectCard += '<p>' + repo.description + '</p>';
+                            projectCard += '<a href="' + repo.html_url + '" target="_blank">';
+                            projectCard += ' [view-source]</a>';
+                            projectCard += '</div>';
+
+                            $('#projects-container').append(projectCard);
+                        }
+                    },
+                    error: function (error) {
+                        console.error('Error fetching GitHub repos - We cry :)', error);
+                    }
+                });
+            });
+        </script>
+        <hr class="hro"/>
+
 
 		
 
-        <!-- CONNECT with ME start.  -->
-        <div>
-		<footer class="footer" id="footer">
-			<h3>CONNECT with ME :</h3>
-            <p align="left">
-                <a href="https://www.linkedin.com/in/janymuong/" target="_blank"><img align="center" src="./img_icons/linkedin-light.svg" title="LinkedIn" alt="@janymuong" /></a>
-                <a href="https://www.twitch.tv/janymuong/" target="_blank"><img align="center" src="./img_icons/twitch.svg" title="Twitch" alt="@janymuong" /></a>
-                <a href="https://twitter.com/janymuong/" target="_blank"><img align="center" src="./img_icons/twitter-light.svg" title="Twitter" alt="janymuong" /></a>
-                <a href="https://github.com/janymuong/" target="_blank"><img align="center" src="./img_icons/github-light.svg" title="GitHub" alt="@janymuong" /></a>
-                <a href="https://instagram.com/jany_muong/" target="_blank"><img align="center" src="./img_icons/instagram-light.svg" title="Instagram" alt="@janymuong" /></a>
-                <code><a href="https://discord.com/janymuong#0/" target="_blank"><img align="center" src="./img_icons/discord.svg" title="Discord" alt="@janymuong" /></a></code>
-              </p>
-            <div class="copyright">
-                &copy; 2023 World Wide 'WEEB' :). Unlicense. All rights reserved.
-            </div>
-		</footer>
-        </div>
-		<!-- CONNECT with ME section end -->
+    </body>
+    <br><br>
 
-	</body>
+
+    <!-- CONNECT with ME start.  -->
+    <div>
+    <footer class="footer" id="footer">
+        <h3>CONNECT with ME :</h3>
+        <p align="left">
+            <a href="https://www.linkedin.com/in/janymuong/" target="_blank"><img align="center" src="./img_icons/linkedin-light.svg" title="LinkedIn" alt="@janymuong" /></a>
+            <a href="https://www.twitch.tv/janymuong/" target="_blank"><img align="center" src="./img_icons/twitch.svg" title="Twitch" alt="@janymuong" /></a>
+            <a href="https://twitter.com/janymuong/" target="_blank"><img align="center" src="./img_icons/twitter-light.svg" title="Twitter" alt="janymuong" /></a>
+            <a href="https://github.com/janymuong/" target="_blank"><img align="center" src="./img_icons/github-light.svg" title="GitHub" alt="@janymuong" /></a>
+            <a href="https://instagram.com/jany_muong/" target="_blank"><img align="center" src="./img_icons/instagram-light.svg" title="Instagram" alt="@janymuong" /></a>
+            <code><a href="https://discord.com/janymuong#0/" target="_blank"><img align="center" src="./img_icons/discord.svg" title="Discord" alt="@janymuong" /></a></code>
+            </p>
+        <div class="copyright">
+            &copy; 2023 World Wide 'WEEB' :). Unlicense. All rights reserved.
+        </div>
+    </footer>
+    </div>
+    <!-- CONNECT with ME section end -->
+
 </html>
