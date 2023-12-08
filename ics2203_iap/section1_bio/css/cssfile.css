@@ -71,14 +71,15 @@ p {
 
 #blog {
 	background-image: url("../img_icons/gnu.svg");
+	/* background: linear-gradient(35deg, #2542426d, rgba(164, 147, 147, 0.373)); */
 	background-size: cover;
     margin-top: 10px;
 }
 
 #blog img {
 	display: flex;
-	width: 80px;
-	height: 120px;
+	width: 84px;
+	height: 100px;
 	margin: auto;
     align-items: flex-start;
 }
@@ -92,7 +93,7 @@ p {
 }
 #blog span {
 	color: #1e262a;
-	padding-top: 5px;
+	padding-top: 10px;
 	margin: 0;
 	font-weight: bold;
 	text-align: left;
@@ -291,7 +292,21 @@ background-color: #0056b3;
     padding: 10px 10px;
 }
 
-/* .blog-nav{} */
-/* blockquote {
-background-color: #f7dfdf;
-} */
+.label{
+	display: inline-flex;
+	/* align-items: center; */
+	margin-right: 10px; 
+}
+
+.search{
+	align-items: center;
+	background: linear-gradient(35deg, #2236366d, rgba(161, 93, 93, 0.373));
+	border-radius: 32px;
+	margin-left: 84px;
+	width: 240px;
+	display: block;
+}
+.container{
+	background-color: rgb(135, 135, 112);
+	border-radius: 16px;
+}
