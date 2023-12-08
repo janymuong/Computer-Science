@@ -1,5 +1,5 @@
 # ICS 2203: INTERNET APPLICATION PROGRAMMING
-## SECTION 1: About Me: Bio
+## SECTION 1: About Me Bio
 > INDIVIDUAL WORK: Biography/Porfolio-like project `HTML`,  `CSS`, `JavaScript` - only.  
 >> INSTRUCTIONS: Study `CRAP` principles for graphic design and apply them in these exercises.  
 
@@ -15,9 +15,11 @@ information.
 that are relevant to the discussion. If possible, this should include links to online materials.
 
 Further:
+```
   i. There should be a navigation bar that allows you to jump from page to page in all the 
   pages.
   ii. All the pages should have a consistent look, e.g. same banner, same footer etc.
+```
 
 ---
 <p align="left">
