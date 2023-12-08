@@ -28,7 +28,7 @@ Further:
 > This is a button to get to the top after scrolling for a relatively large segment of the page.
 
 <p align="left">
-  <img align="center" src="./img_icons/button.png" title="Top" height="200" width="450" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/button.png" title="Top" />
 </p>
 
 The rest of the pages rendered look like this in-browser: 
