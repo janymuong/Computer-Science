@@ -324,7 +324,7 @@ background-color: #0056b3;
     }
 
     .project-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-16px);
     }
 
     .project-card img {

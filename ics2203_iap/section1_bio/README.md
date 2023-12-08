@@ -23,5 +23,6 @@ Further:
 
 ---
 <p align="left">
-  <img align="center" src="./img_icons/Screenshot 2023-11-24 152412.png" title="Portfolio"/>
+  <img align="center" src="./img_icons/main.png" title="Main Page: index.html" height="200" width="450" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/cards.png" title="Tiles" height="200" width="450" style="padding-right:100px;" />
 </p>
