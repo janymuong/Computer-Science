@@ -31,6 +31,10 @@ Further:
 > This is a wepage accessible from  the [`index.html`](./index.html) navigation.  
 > It uses [vanilla `JavaScript only`](./js/projects.js) - no frameworks. It fetches repositories using the [GitHub Repos API](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28#list-repositories-for-a-user), and renders them on a card display.
 
+<p align="left">
+  <img align="center" src="./img_icons/cards.png" title="Tiles" height="200" width="450" style="padding-right:100px;" />
+</p>
+
 ---
 ## Snaps
 
