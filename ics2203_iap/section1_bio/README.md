@@ -24,7 +24,7 @@ Further:
 > This is a JavaScript [`button`](./js/topbutton.js) to get to the top after scrolling for a relatively large segment of the page.
 
 <p align="left">
-  <img align="center" src="./img_icons/button.png" height="200" width="420" title="Top" />
+  <img align="center" src="./img_icons/button.png" height="200" width="480" title="Top" />
 </p>
 
 ### GitHub Projects Cards
@@ -32,7 +32,7 @@ Further:
 > It uses [vanilla `JavaScript only`](./js/projects.js) - no frameworks. It fetches repositories using the [GitHub Repos API](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28#list-repositories-for-a-user), and renders them on a card display.
 
 <p align="left">
-  <img align="center" src="./img_icons/cards.png" title="Tiles" height="200" width="450" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/cards.png" title="Tiles" height="200" width="480" style="padding-right:100px;" />
 </p>
 
 ---
@@ -40,5 +40,5 @@ Further:
 
 The rest of the page rendered look like this in-browser: 
 <p align="left">
-  <img align="center" src="./img_icons/main.png" title="Main Page: index.html" height="200" width="450" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/main.png" title="Main Page: index.html" height="200" width="480" style="padding-right:100px;" />
 </p>
