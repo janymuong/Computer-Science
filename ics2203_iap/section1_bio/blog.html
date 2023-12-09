@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/cssfile.css">
     <meta charset="utf-8">
-    <meta name="author" content="Mu-0">
     <title>Blogs: World Wide Weeb</title>
+    <link rel="stylesheet" href="./css/cssfile.css">
+    <script src="./js/render_form.js" defer></script>
+    <meta name="author" content="Mu-0">
 </head>
 <body>
     <header>
@@ -16,88 +17,64 @@
             </ul>
         </nav>
         <h1 class="aboutleft">GNU/Robot Person's Blogs</h1>
-
     </header>
-            <main>
-                <!-- person image -->
-                <div id="blog" class="section blog">
-                    <img alt="Avatar for: gopherize-avatar" title="Avatar" class="img-circle" src="./img_icons/linux.svg">
-                    <p>GNU/Robot Person</p>
-                    <span class="known-address">Last Known Address: I have an address in <em>RAM</em></span>
-                </div>
-                <!-- person image end -->
-
-                <br>
-                <h3>Search for specific blogs</h3>
-                <form class="aboutleft">
-                    <p>Please select your  gender(not relevant for the blog search):</p>
-                    <label class="label">
-                        <input type="radio" name="gender" value="male">
-                        Male
-                    </label>
-                    
-                    <label class="label">
-                        <input type="radio" name="gender" value="female">
-                        Female
-                    </label>
-                    
-                    <label class="label">
-                        <input type="radio" name="gender" value="other">
-                        Other
-                    </label>
-                    <br/><br/>
-                    <span align="left">Please select blogs's background: </span>
-                    <select align="left" name="field" id="dropdown">
-                        <option value="cs">Computer science</option>
-                        <option value="yt">YouTube</option>
-                        <option value="jokes">Jokes</option>
-                        <option value="eg">No filters</option>
-                    </select> <br/>
-                    <div>
-                        <input class="search" type="search" placeholder="Enter term to look up">
-                        <input class="search" type="submit" value="Search in-blogs">
-                    </div>
-                    
-                    </form>
-
-                    <br>
-            <div class="container">
-                <article>
-                    <h3>Blog: I Live in Gate C </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipisicing elit. Reiciendis, numquam minima dicta minus a voluptas, atque voluptates ducimus dolorem odit odio laborum labore. Voluptates
-                        eligendi molestias facilis excepturi aut? Omnis.
-                    </p>
-                    <h3>Blog: The Big Bang Theory</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis, eum reprehenderit, dolorum soluta delectus reiciendis facilis illo ullam
-                        odio natus quos nostrum error ipsum enim, voluptatem voluptate quidem nesciunt.</p>
-                    <h3>Blog: Anime - It's for the weebs :)</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut aperiam blanditiis, recusandae impedit esse voluptatum, totam dicta accusamus accusantium ab praesentium ad eligendi eos minus nisi architecto suscipit temporibus!</p>
-            </section> </article>
-                
-
-            </main>
-            
-            <br>
-            <!-- CONNECT with ME start.  -->
-            <div>
-                <footer class="footer" id="footer">
-                    <h3>CONNECT with ME :</h3>
-                    <p align="left">
-                        <a href="https://www.linkedin.com/in/janymuong/" target="_blank"><img align="center" src="./img_icons/linkedin-light.svg" title="LinkedIn" alt="@janymuong" /></a>
-                        <a href="https://www.twitch.tv/janymuong/" target="_blank"><img align="center" src="./img_icons/twitch.svg" title="Twitch" alt="@janymuong" /></a>
-                        <a href="https://twitter.com/janymuong/" target="_blank"><img align="center" src="./img_icons/twitter-light.svg" title="Twitter" alt="janymuong" /></a>
-                        <a href="https://github.com/janymuong/" target="_blank"><img align="center" src="./img_icons/github-light.svg" title="GitHub" alt="@janymuong" /></a>
-                        <a href="https://instagram.com/jany_muong/" target="_blank"><img align="center" src="./img_icons/instagram-light.svg" title="Instagram" alt="@janymuong" /></a>
-                        <code><a href="https://discord.com/janymuong#0/" target="_blank"><img align="center" src="./img_icons/discord.svg" title="Discord" alt="@janymuong" /></a></code>
-                    </p>
-                    <div class="copyright">
-                        &copy; 2023 World Wide 'WEEB' :). Unlicense. All rights reserved.
-                    </div>
-                </footer>
-            </div>
-                <!-- CONNECT with ME section end -->
+    <main>
+        <!-- person image -->
+        <div id="blog" class="section blog">
+            <img alt="Avatar for: gopherize-avatar" title="Avatar" class="img-circle" src="./img_icons/linux.svg">
+            <p>GNU/Robot Person</p>
+            <span class="known-address">Last Known Address: I have an address in <em>RAM</em></span>
         </div>
-    </body>
+        <!-- person image end -->
+
+        <br>
+        <h3>Search for specific blogs</h3>
+
+        <!-- form segemnt here - returned/rendered using javascript, PATH: ./js/render_form.js -->
+        <div id="form-container"></div>
+        <!-- form segemnt end; -->
+
+
+        <br>
+        <!-- BLOGS start -->
+        <div class="container">
+            <article>
+                <h3>Blog: I Live in Gate C </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Reiciendis, numquam minima dicta minus a voluptas, atque voluptates ducimus dolorem odit odio laborum labore. Voluptates
+                    eligendi molestias facilis excepturi aut? Omnis.
+                </p>
+                <h3>Blog: The Big Bang Theory</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis, eum reprehenderit, dolorum soluta delectus reiciendis facilis illo ullam
+                    odio natus quos nostrum error ipsum enim, voluptatem voluptate quidem nesciunt.</p>
+                <h3>Blog: Anime - It's for the weebs :)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut aperiam blanditiis, recusandae impedit esse voluptatum, totam dicta accusamus accusantium ab praesentium ad eligendi eos minus nisi architecto suscipit temporibus!</p>
+            </article>
+        </div>
+        <!-- BLOGS end -->
+
+    </main>
+    <br>
+
+    <!-- CONNECT with ME start.  -->
+    <div>
+        <footer class="footer" id="footer">
+            <h3>CONNECT with ME :</h3>
+            <p align="left">
+                <a href="https://www.linkedin.com/in/janymuong/" target="_blank"><img align="center" src="./img_icons/linkedin-light.svg" title="LinkedIn" alt="@janymuong" /></a>
+                <a href="https://www.twitch.tv/janymuong/" target="_blank"><img align="center" src="./img_icons/twitch.svg" title="Twitch" alt="@janymuong" /></a>
+                <a href="https://twitter.com/janymuong/" target="_blank"><img align="center" src="./img_icons/twitter-light.svg" title="Twitter" alt="janymuong" /></a>
+                <a href="https://github.com/janymuong/" target="_blank"><img align="center" src="./img_icons/github-light.svg" title="GitHub" alt="@janymuong" /></a>
+                <a href="https://instagram.com/jany_muong/" target="_blank"><img align="center" src="./img_icons/instagram-light.svg" title="Instagram" alt="@janymuong" /></a>
+                <code><a href="https://discord.com/janymuong#0/" target="_blank"><img align="center" src="./img_icons/discord.svg" title="Discord" alt="@janymuong" /></a></code>
+            </p>
+            <div class="copyright">
+                &copy; 2023 World Wide 'WEEB' :). Unlicense. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    <!-- CONNECT with ME section end -->
+
+</body>
 </html>
