@@ -33,14 +33,16 @@ Further:
 </p>
 
 #### Return `<form>` Element using `JavaScript`;
-> This is a JavaScript [`function`](./js/render_form.js) to display a form on a segement of the page: [blog.html](./blog.html)
+> This is a JavaScript [`function`](./js/render_form.js) to display a form on a segement of the page: [blog.html](./blog.html)  
+> satisfies the requirement: "*of the three, one should have a form that uses JS to render some information.*"
 <p align="left">
   <img align="center" src="./img_icons/form.png" height="200" width="480" title="Form to Submit Search" />
 </p>
 
 #### GitHub Projects Cards
-> This is a wepage [projects.html](projects.html) accessible from the [`index.html`](./index.html) using navigation bar.  
-> It uses vanilla [`JavaScript`](./js/projects.js) - no frameworks. It fetches repositories using the [GitHub Repos API](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28#list-repositories-for-a-user), and renders them on a card display.
+> This is from one of the external pages: [projects.html](projects.html) - accessed using the main page's navigation.  
+> It uses vanilla [`JavaScript`](./js/projects.js) - no frameworks. It fetches repositories using the [GitHub Repos API](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28#list-repositories-for-a-user), and renders them on a card display.  
+
 
 <p align="left">
   <img align="center" src="./img_icons/cards.png" title="Tiles" height="200" width="480" style="padding-right:100px;" />
