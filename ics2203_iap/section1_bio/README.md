@@ -52,5 +52,7 @@ Further:
 #### Snaps
 The rest of the page rendered looks like this in-browser: 
 <p align="left">
-  <img align="center" src="./img_icons/main.png" title="Main Page: index.html" height="200" width="480" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/index_0.png" title="Main Page: index.html" height="200" width="320" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/index_1.png" title="Main Page: index.html" height="200" width="320" style="padding-right:100px;" />
+  <img align="center" src="./img_icons/index_2.png" title="Main Page: index.html" height="200" width="320" style="padding-right:100px;" />
 </p>
