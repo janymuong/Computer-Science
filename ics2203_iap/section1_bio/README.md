@@ -20,14 +20,22 @@ Further:
   pages.
   ii. All the pages should have a consistent look, e.g. same banner, same footer etc.
 ```
-### `TAKE me to the TOP`
+
+### SOLUTIONS
+#### `TAKE me to the TOP`
 > This is a JavaScript [`button`](./js/topbutton.js) to get to the top after scrolling for a relatively large segment of the page.
 
 <p align="left">
   <img align="center" src="./img_icons/button.png" height="200" width="480" title="Top" />
 </p>
 
-### GitHub Projects Cards
+#### Return form using `JavaScript`;
+> This is a JavaScript [`function`](./js/render_form.js) to display a form on a segement of the page: [blog.html](./blog.html)
+<p align="left">
+  <img align="center" src="./img_icons/form.png" height="200" width="480" title="Top" />
+</p>
+
+#### GitHub Projects Cards
 > This is a wepage accessible from  the [`index.html`](./index.html) navigation.  
 > It uses [vanilla `JavaScript only`](./js/projects.js) - no frameworks. It fetches repositories using the [GitHub Repos API](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28#list-repositories-for-a-user), and renders them on a card display.
 
@@ -36,7 +44,7 @@ Further:
 </p>
 
 ---
-## Snaps
+#### Snaps
 
 The rest of the page rendered look like this in-browser: 
 <p align="left">
