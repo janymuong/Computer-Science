@@ -6,8 +6,7 @@
         <title>About me: My PROJECTS :)</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
         <link rel="stylesheet" href="./css/cssfile.css">
-        <script rel="text/javascript" src="./js/topbutton.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script rel="text/javascript" src="./js/projects.js"></script>
         <meta name="Jany Muong" content="Mu-0">
 	</head>
     <header>
@@ -42,41 +41,8 @@
         </div>
         <!-- GitHub Projects section end -->
 
-        <script>
-            $(document).ready(function () {
-                // github API URL - fetch repositories
-                var githubApiUrl = 'https://api.github.com/users/janymuong/repos';
-
-                // jQuery AJAX
-                $.ajax({
-                    url: githubApiUrl,
-                    dataType: 'json',
-                    success: function (data) {
-                        const numProjectsToDisplay = 5;
-
-                        for (let i = 0; i < numProjectsToDisplay && i < data.length; i++) {
-                            let repo = data[i];
-                            let projectCard = '<div class="project-card">';
-                            projectCard += '<h3>' + repo.name + '</h3>';
-                            projectCard += '<img src="./img_icons/github-dark.svg" alt="GitHub Icon">';
-                            projectCard += '<p>' + repo.description + '</p>';
-                            projectCard += '<a href="' + repo.html_url + '" target="_blank">';
-                            projectCard += ' [view-source]</a>';
-                            projectCard += '</div>';
-
-                            $('#projects-container').append(projectCard);
-                        }
-                    },
-                    error: function (error) {
-                        console.error('Error fetching GitHub repos - We cry :)', error);
-                    }
-                });
-            });
-        </script>
         <hr class="hro"/>
 
-
-		
 
     </body>
     <br><br>
