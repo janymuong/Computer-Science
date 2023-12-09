@@ -1,4 +1,6 @@
 # ICS 2203: INTERNET APPLICATION PROGRAMMING
+
+
 ## SECTION 1: About Me Bio
 > INDIVIDUAL WORK: ***Biography/Porfolio-like project*** `HTML`,  `CSS`, `JavaScript` - only.  
 > INSTRUCTIONS: Study `CRAP` principles for graphic design and apply them in these exercises.  
@@ -37,7 +39,7 @@ Further:
 </p>
 
 #### GitHub Projects Cards
-> This is a wepage accessible from the [`index.html`](./index.html) using navigation bar.  
+> This is a wepage [projects](projects.html) accessible from the [`index.html`](./index.html) using navigation bar.  
 > It uses vanilla [`JavaScript`](./js/projects.js) - no frameworks. It fetches repositories using the [GitHub Repos API](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28#list-repositories-for-a-user), and renders them on a card display.
 
 <p align="left">

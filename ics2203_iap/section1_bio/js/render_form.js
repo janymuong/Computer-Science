@@ -1,3 +1,6 @@
+// SCT211-0848/2018 
+// Jany Muong
+
 document.addEventListener('DOMContentLoaded', function () {
     // JavaScript function - render the form on blog.html
     function renderForm() {

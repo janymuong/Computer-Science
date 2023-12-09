@@ -1,3 +1,6 @@
+// SCT211-0848/2018 
+// Jany Muong
+
 function setupBackToTopButton() {
     const backBtn = document.getElementById("back-btn");
   

@@ -1,3 +1,6 @@
+// SCT211-0848/2018 
+// Jany Muong
+
 document.addEventListener('DOMContentLoaded', function () {
     // GitHub API URL - fetch repos
     const githubApiUrl = 'https://api.github.com/users/janymuong/repos';
