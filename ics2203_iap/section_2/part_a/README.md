@@ -33,9 +33,9 @@ This is what the plan was;
 
 #### Rendering in-browser
 > the page(s) look(s) like this when rendered;
-<p>
-  <img  src="./img/js-docs.png" height="320" title="Micro-JS-Docs" />
-  <img  src="./img/page2.png" height="320" title="Micro-JS-Docs" />
+<p align="center">
+  <img align="center" src="./img/js-docs.png" height="320" title="Micro-JS-Docs" />
+  <img align="center" src="./img/page2.png" height="320" title="Micro-JS-Docs" />
 </p>
 
 
