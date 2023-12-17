@@ -2,6 +2,16 @@
 ## SECTION2
 
 > GROUP WORK ASSIGNMENT
+#### Contributors
+> This segment lists out the *group members*.
+```bash
+SCT211-0848/2018 - Jany Muong;
+SCT211-0002/2019 - Kimani Geoffrey Chege;
+SCT211-0057/2022 - Natasha Wangui Ndung'u  ';
+SCT211-0504/2021 - Gatmach Yuol Nyuon;
+<regno Here> - Akech Dau Atem;
+#...will update
+```
 
 ### `PART A`: 
 > Before embarking on a website project you need to set time for planning. planning involves:  
