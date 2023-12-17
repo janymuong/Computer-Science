@@ -22,6 +22,14 @@ In your groups you have already done this part. (Refer to the assignment with th
 
 
 ---
+### Solutions
+The page looks like this when rendered;
+<p align="center">
+  <img align="center" src="./img/js-docs.png" height="200" width="480" title="Micro-JS-Docs" />
+</p>
+
+
+---
 ### Contributors
 > This segment lists out the *group members*.
 ```bash
