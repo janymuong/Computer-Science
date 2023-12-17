@@ -20,12 +20,22 @@ f) Create rough sketches of your ideas for each page.
 g) Be able to justify why you have chosen to design your website the way you have.  
 In your groups you have already done this part. (Refer to the assignment with the Document and website structure notes)  
 
+Build the site using HTML and CSS only
+
 
 ---
 ### Solutions
-The page looks like this when rendered;
+#### Prepping and Sketches
+This is what the plan was;
 <p align="center">
-  <img align="center" src="./img/js-docs.png" title="Micro-JS-Docs" />
+  <img align="center" src="./img/prep-sketches.jpg" height="320" title="Micro-JS-Docs" />
+</p>
+
+#### Rendering in-browser
+> the page(s) look(s) like this when rendered;
+<p align="center">
+  <img align="center" src="./img/js-docs.png" height="200" title="Micro-JS-Docs" />
+  <img align="center" src="./img/page2.png" height="200" title="Micro-JS-Docs" />
 </p>
 
 
@@ -36,5 +46,7 @@ The page looks like this when rendered;
 SCT211-0848/2018 - Jany Muong;
 SCT211-0002/2019 - Kimani Geoffrey Chege;
 SCT211-0057/2022 - Natasha Wangui Ndung'u  ';
+SCT211-0504/2021 - Gatmach Yuol Nyuon;
+<regno Here> - Akech Dau Atem;
 #...will update
 ```

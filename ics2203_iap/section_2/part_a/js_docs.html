@@ -3,126 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js_docs.css">
+    <link rel="stylesheet" href="css/js_docs.css">
     <title>Micro JavaScript Documentation</title>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#Prerequisite">Prerequisite</a></li>
-            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
-            <li><a class="nav-link" href="#Variables_&_Declaration">Variables & Declaration</a></li>
-            <li><a class="nav-link" href="#Constants">Constants</a></li>
-            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
-            <li><a class="nav-link" href="#Functions">Functions</a></li>
-            <li><a class="nav-link" href="#Reference">Reference</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav id="navbar">
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Prerequisite">Prerequisite</a></li>
+                <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li><a class="nav-link" href="#Variables_&_Declaration">Variables & Declaration</a></li>
+                <li><a class="nav-link" href="#Constants">Constants</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+                <li><a href="page2.html">Extras</a></li>
+            </ul>
+        </nav>
 
-    <main id="main-doc">
-        <header>
-            <h1>Micro JAVASCRIPT Documentation</h1>
-        </header>
+        <main id="main-doc">
+            <header>
+                <h1>Micro JAVASCRIPT Documentation</h1>
+            </header>
 
-        <section class="main-section" id="Introduction">
-            <h2>Introduction</h2>
-            <article>
-                <p>JavaScript is an object-oriented scripting language...</p>
-                <p>It is widely used for creating dynamic content on the web, interacting with the DOM, and building robust web applications.</p>
-                <p> JavaScript is an object-oriented scripting language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </p>
-                <p> JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example: </p> 
-        <ul> <li> Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. </li> <li> Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. </li> 
-        </ul>
-            </article>
-        </section>
+            <section class="main-section" id="Introduction">
+                <h2>Introduction</h2>
+                <article>
+                    <p>JavaScript is an object-oriented scripting language...</p>
+                    <p>It is widely used for creating dynamic content on the web, interacting with the DOM, and building robust web applications.</p>
+                    <p> JavaScript is an object-oriented scripting language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </p>
+                    <p> JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example: </p> 
+            <ul> <li> Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. </li> <li> Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. </li> 
+            </ul>
+                </article>
+            </section>
 
-        <section class="main-section" id="Prerequisite">
-            <h2>Prerequisite</h2>
-            <article>
-                <p>You should be familiar with the following:</p>
-                <ul>
-                    <li>A general understanding of the Internet.</li>
-                    <li>Working knowledge of HyperText Markup Language (HTML).</li>
-                    <li>Some programming experience, preferably with a language like JavaScript, Python, or Java.</li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="main-section" id="Hello_World">
-            <h2>Hello World</h2>
-            <article>
-                <p>As a tradition, write a "Hello world" JavaScript code:</p>
-                <code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World"); </code>
-                <p>This simple example demonstrates the use of a basic JavaScript function to display an alert message.</p>
-            </article>
-        </section>
-
-        <section class="main-section" id="Variables_&_Declaration">
-            <h2>Variables & Declaration</h2>
-            <article>
-                <p>Variables hold values in your application...</p>
-                <p>JavaScript identifiers must follow certain rules, including starting with a letter, underscore, or dollar sign.</p>
-                <p>Three ways to declare a variable:</p>
-                <ul>
-                    <li>Using the keyword <code>const</code>: <code>const x = 42;</code></li>
-                    <li>Directly assigning a value: <code>x = 42;</code> (Avoid this for global variables)</li>
-                    <li>Using the keyword <code>let</code>: <code>let y = 13;</code> (Block scope local variable)</li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="main-section" id="Constants">
-            <h2>Constants</h2>
-            <article>
-                <p>You can create a read-only, named constant with the <code>const</code> keyword...</p>
-                <p>A constant cannot change value through assignment or be re-declared while the script is running.</p>
-                <p>Example:</p>
-                <code>const PI = 3.14;</code>
-                <p>Constants must be initialized with a value and follow the same rules as variables for naming.</p>
-            </article>
-        </section>
-
-        <section class="main-section" id="Data_Types">
-            <h2>Data Types</h2>
-            <article>
-                <p>The ECMAScript standard defines seven data types:</p>
-                <ul>
-                    <li>Six primitive data types:</li>
+            <section class="main-section" id="Prerequisite">
+                <h2>Prerequisite</h2>
+                <article>
+                    <p>You should be familiar with the following:</p>
                     <ul>
-                        <li>Boolean: <code>true</code> and <code>false</code></li>
-                        <li>Null: A special keyword denoting a null value</li>
-                        <li>Undefined: A top-level property whose value is undefined</li>
-                        <li>Number: <code>42</code> or <code>3.14159</code></li>
-                        <li>String: <code>"Howdy"</code></li>
-                        <li>Symbol (new in ECMAScript 2015): A unique and immutable data type</li>
+                        <li>A general understanding of the Internet.</li>
+                        <li>Working knowledge of HyperText Markup Language (HTML).</li>
+                        <li>Some programming experience, preferably with a language like JavaScript, Python, or Java.</li>
                     </ul>
-                    <li>Object</li>
-                </ul>
-                <p>Objects and functions are fundamental elements in JavaScript, serving as containers for values and procedures.</p>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="main-section" id="Functions">
-            <h2>Functions</h2>
-            <article>
-                <p>A function definition (also called a function declaration)...</p>
-                <p>Example:</p>
-                <code>function square(number) { return number * number; }</code>
-                <p>Functions consist of the function keyword, a name, a list of arguments, and the statements enclosed in curly brackets.</p>
-                <p>Parameters are passed by value, meaning changes inside the function do not affect the global or calling function.</p>
-            </article>
-        </section>
+            <section class="main-section" id="Hello_World">
+                <h2>Hello World</h2>
+                <article>
+                    <p>As a tradition, write a "Hello world" JavaScript code:</p>
+                    <code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World"); </code>
+                    <p>This simple example demonstrates the use of a basic JavaScript function to display an alert message.</p>
+                </article>
+            </section>
 
-        <hr>
+            <section class="main-section" id="Variables_&_Declaration">
+                <h2>Variables & Declaration</h2>
+                <article>
+                    <p>Variables hold values in your application...</p>
+                    <p>JavaScript identifiers must follow certain rules, including starting with a letter, underscore, or dollar sign.</p>
+                    <p>Three ways to declare a variable:</p>
+                    <ul>
+                        <li>Using the keyword <code>const</code>: <code>const x = 42;</code></li>
+                        <li>Directly assigning a value: <code>x = 42;</code> (Avoid this for global variables)</li>
+                        <li>Using the keyword <code>let</code>: <code>let y = 13;</code> (Block scope local variable)</li>
+                    </ul>
+                </article>
+            </section>
 
-        <section class="main-section" id="Reference">
-            <h2>Reference</h2>
-            <article>
-                <p>For more information on Control Structures and a detailed guide, visit:</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN Documentation</a>
-            </article>
-        </section>
-    </main>
+            <section class="main-section" id="Constants">
+                <h2>Constants</h2>
+                <article>
+                    <p>You can create a read-only, named constant with the <code>const</code> keyword...</p>
+                    <p>A constant cannot change value through assignment or be re-declared while the script is running.</p>
+                    <p>Example:</p>
+                    <code>const PI = 3.14;</code>
+                    <p>Constants must be initialized with a value and follow the same rules as variables for naming.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Data_Types">
+                <h2>Data Types</h2>
+                <article>
+                    <p>The ECMAScript standard defines seven data types:</p>
+                    <ul>
+                        <li>Six primitive data types:</li>
+                        <ul>
+                            <li>Boolean: <code>true</code> and <code>false</code></li>
+                            <li>Null: A special keyword denoting a null value</li>
+                            <li>Undefined: A top-level property whose value is undefined</li>
+                            <li>Number: <code>42</code> or <code>3.14159</code></li>
+                            <li>String: <code>"Howdy"</code></li>
+                            <li>Symbol (new in ECMAScript 2015): A unique and immutable data type</li>
+                        </ul>
+                        <li>Object</li>
+                    </ul>
+                    <p>Objects and functions are fundamental elements in JavaScript, serving as containers for values and procedures.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Functions">
+                <h2>Functions</h2>
+                <article>
+                    <p>A function definition (also called a function declaration)...</p>
+                    <p>Example:</p>
+                    <code>function square(number) { return number * number; }</code>
+                    <p>Functions consist of the function keyword, a name, a list of arguments, and the statements enclosed in curly brackets.</p>
+                    <p>Parameters are passed by value, meaning changes inside the function do not affect the global or calling function.</p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section class="main-section" id="Reference">
+                <h2>Reference</h2>
+                <article>
+                    <p>For more information on Control Structures and a detailed guide, visit: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN Documentation</a></p>
+                    
+                </article>
+            </section>
+        </main>
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">Loops and Iteration</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank">Functions</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank">Working with Objects</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 CS Persons Unlicense: Micro JavaScript Documentation. All rights reserved.</p>
+    </footer>
 </body>
 </html>
