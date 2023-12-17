@@ -28,14 +28,14 @@ Build the site using HTML and CSS only
 #### Prepping and Sketches
 This is what the plan was;
 <p align="center">
-  <img align="center" src="./img/prep-sketches.jpg" height="320" title="Micro-JS-Docs" />
+  <img align="center" src="./img/prep-sketches.jpg" height="200" width="320" title="Micro-JS-Docs" />
 </p>
 
 #### Rendering in-browser
 > the page(s) look(s) like this when rendered;
-<p align="center">
-  <img align="center" src="./img/js-docs.png" height="320" title="Micro-JS-Docs" />
-  <img align="center" src="./img/page2.png" height="320" title="Micro-JS-Docs" />
+<p>
+  <img src="./img/js-docs.png" height="240" title="Micro-JS-Docs" />
+  <img src="./img/page2.png" height="240" title="Micro-JS-Docs" />
 </p>
 
 
