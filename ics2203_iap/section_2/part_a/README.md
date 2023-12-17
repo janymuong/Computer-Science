@@ -25,14 +25,14 @@ Build the site using HTML and CSS only
 
 ---
 ### Solutions
-#### Prepping and Sketches
-This is what the plan was;
+#### Prepping and Sketches/Flowchart
+This segement represents the planning in terms of sketching/flowcharts. This is what the plan was;
 <p align="center">
   <img align="center" src="./img/prep-sketches.jpg" height="200" width="320" title="Micro-JS-Docs" />
 </p>
 
 #### Rendering in-browser
-> the page(s) look(s) like this when rendered;
+> The page(s) look(s) like this when rendered;
 <p>
   <img src="./img/js-docs.png" height="240" title="Micro-JS-Docs" />
   <img src="./img/page2.png" height="240" title="Micro-JS-Docs" />
@@ -47,6 +47,5 @@ SCT211-0848/2018 - Jany Muong;
 SCT211-0002/2019 - Kimani Geoffrey Chege;
 SCT211-0057/2022 - Natasha Wangui Ndung'u  ';
 SCT211-0504/2021 - Gatmach Yuol Nyuon;
-<regno Here> - Akech Dau Atem;
-#...will update
+SCT211-0535/2022 - Akech Dau Atem;
 ```
