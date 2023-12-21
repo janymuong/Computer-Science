@@ -25,6 +25,8 @@ g) Be able to justify why you have chosen to design your website the way you hav
 In your groups you have already done this part. (Refer to the assignment with the Document and website structure   
 notes)
 
+> __TIP__: `HTML`, `CSS` - only solutions to `part A` of the group work as per the instructions are located in [`part_a`](./part_a/) directory.
+
 ### `PART B`:  
 As a team of internet application developers, assume a web project.
 1. Guided by the above steps write a proposal document for your project. The title should be the name of the
@@ -35,6 +37,8 @@ c) Goals
 d) Flow chart or sitemap-with explanations  
 e) Rough sketches of your ideas for each page.   
 f) conclusion  
+
+> __TIP__: Django solutions to `part B` of the group work as per the instructions are located in `nxt_lp` directory. The major Django files e.g models templates and urls are in the [nxt_lp/on_lp](./nxt_lp/on_lp/) directory. The directory [nxt_lp](./nxt_lp/) refers to the main project dirctory created using `django-admin startproject nxt_lp`.
 
 > Create the site designed in 1. 
 >> Include a form for the user to fill (try to implement at least 5 form elements). Use Django to implement the project.
