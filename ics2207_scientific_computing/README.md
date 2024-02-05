@@ -34,5 +34,5 @@
 5. **Gauss-Jordan Elimination Algorithm:** A numerical method for solving systems of linear equations, commonly used in scientific computing to find solutions to linear systems.
 
 ## Getting Started:
-Install a scientific computing environment such as Anaconda, which provides Python along with popular scientific computing libraries.
-Get Jupyter Notebook and practice locally.
+- Install a scientific computing environment such as Anaconda, which provides Python along with popular scientific computing libraries.
+- Get Jupyter Notebook and practice locally.
