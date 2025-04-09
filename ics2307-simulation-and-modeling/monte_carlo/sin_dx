@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+import numpy as np
+
+def monte_carlo_integrate(g, a, b, n):
+    """Estimate ∫_{a}^{b} g(x) dx using Monte Carlo."""
+    x = np.random.uniform(a, b, n)
+    y = g(x)
+    return (b - a) * np.mean(y)
+
+# Example: ∫ sin(x) from 0 to π (true value = 2)
+result = monte_carlo_integrate(np.sin, 0, np.pi, 100000)
+print(f"Estimated integral: {result:.4f}")  # Outputs ~2.000
