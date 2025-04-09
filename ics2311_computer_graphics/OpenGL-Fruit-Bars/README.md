@@ -4,7 +4,7 @@
 
 ## Fruit Preference Visualization with OpenGL
 
-![Bar Chart Example](screenshot.png) *(Add screenshot after uploading)*
+![](screenshot.png)
 
 ### Overview
 OpenGL programs visualizing youth fruit preference survey data from Gachororo. Contains two implementations:
