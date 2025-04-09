@@ -1,0 +1,2 @@
+Systems programming is fun!
+This course covers files, memory, and more.
