@@ -1,0 +1,219 @@
+#!/usr/bin/python3
+'''
+SCT211-0848/2018 - Jany Muong
+ICS 2307: Simulation and Modeling - Single Server Queue Simulation
+B.Sc. Computer Science 3.2(January - April/2025)
+'''
+import math
+import random  # replacement for lcgrand.c/lcgrand.h (in C) for random number generator
+
+
+# constants
+Q_LIMIT = 100  # limit on queue length
+BUSY = 1       # mnemonics for server's being busy
+IDLE = 0       # mnemonics for server's being idle
+
+
+class SingleServerQ:
+    '''mm1 queue'''
+    def __init__(self, file_in, file_out):
+        # file handles
+        self.infile = file_in
+        self.outfile = file_out
+
+        # global variables
+        self.next_event_type = 0
+        self.num_custs_delayed = 0
+        self.num_delays_required = 0
+        self.num_events = 2
+        self.num_in_q = 0
+        self.server_status = IDLE
+        
+        self.area_num_in_q = 0.0
+        self.area_server_status = 0.0
+        self.mean_interarrival = 0.0
+        self.mean_service = 0.0
+        self.sim_time = 0.0
+        self.time_arrival = [0.0] * (Q_LIMIT + 1)
+        self.time_last_event = 0.0
+        self.time_next_event = [0.0, 0.0, 0.0]  # index 0 not used - we start at arrival event 1
+        self.total_of_delays = 0.0
+        
+        self.results = {}
+    
+    def initialize(self):
+        '''
+        initialize the simulation state variables
+        and statistical counters.
+        '''
+        # simulation clock
+        self.sim_time = 0.0
+        
+        # state variables
+        self.server_status = IDLE
+        self.num_in_q = 0
+        self.time_last_event = 0.0
+        
+        # statistical counters
+        self.num_custs_delayed = 0
+        self.total_of_delays = 0.0
+        self.area_num_in_q = 0.0
+        self.area_server_status = 0.0
+        
+        # initialize event list
+        # since no customers are present, the departure event is eliminated
+        self.time_next_event[1] = self.sim_time + self.expon(self.mean_interarrival)
+        self.time_next_event[2] = 1.0e+30
+    
+    def timing(self):
+        '''determine the next event to occur.'''
+        min_time_next_event = 1.0e+29
+        self.next_event_type = 0
+        
+        # determine the event type of the next event to occur
+        for i in range(1, self.num_events + 1):
+            if self.time_next_event[i] < min_time_next_event:
+                min_time_next_event = self.time_next_event[i]
+                self.next_event_type = i
+        
+        # check for whether event list is empty
+        if self.next_event_type == 0:
+            # the event list is empty, so stop the simulation
+            self.outfile.write(f'\nEvent list empty at time {self.sim_time}')
+            exit(1)
+        
+        # the event list is not empty, so advance the simulation clock
+        self.sim_time = min_time_next_event
+    
+    def arrive(self):
+        '''process an arrival event.'''
+        # schedule next arrival
+        self.time_next_event[1] = self.sim_time + self.expon(self.mean_interarrival)
+        
+        # check to see whether server is busy
+        if self.server_status == BUSY:
+            # server is busy, so increment number of customers in queue
+            self.num_in_q += 1
+            
+            # check to see whether an overflow condition exists
+            if self.num_in_q > Q_LIMIT:
+                # the queue has overflowed, so stop the simulation
+                self.outfile.write(f'\nOverflow of the array time_arrival at time {self.sim_time}')
+                exit(2)
+            
+            # there is still room in the queue, so store the time of arrival
+            self.time_arrival[self.num_in_q] = self.sim_time
+        else:
+            # server is idle, so arriving customer has a delay of zero
+            delay = 0.0
+            self.total_of_delays += delay
+        
+            # increment the number of customers delayed, and make server busy
+            self.num_custs_delayed += 1
+            self.server_status = BUSY
+            
+            # schedule a departure (service completion)
+            self.time_next_event[2] = self.sim_time + self.expon(self.mean_service)
+    
+    def depart(self):
+        '''process a departure event.'''
+        # check for whether the queue is empty
+        if self.num_in_q == 0:
+            # the queue is empty so make the server idle and eliminate the departure event
+            self.server_status = IDLE
+            self.time_next_event[2] = 1.0e+30
+        else:
+            # the queue is nonempty, so decrement the number of customers in queue
+            self.num_in_q -= 1
+            
+            # compute the delay of the customer who is beginning service and update total delay
+            delay = self.sim_time - self.time_arrival[1]
+            self.total_of_delays += delay
+            
+            # increment the number of customers delayed, and schedule departure
+            self.num_custs_delayed += 1
+            self.time_next_event[2] = self.sim_time + self.expon(self.mean_service)
+            
+            # move each customer in queue (if any) up one place
+            for i in range(1, self.num_in_q + 1):
+                self.time_arrival[i] = self.time_arrival[i + 1]
+    
+    def report(self):
+        '''REPORT GENERATOR:
+        for generating the simulation report.
+        '''
+        # compute and write estimates of desired measures of performance
+        avg_delay = self.total_of_delays / self.num_custs_delayed
+        avg_num_in_q = self.area_num_in_q / self.sim_time
+        server_util = self.area_server_status / self.sim_time
+        
+        self.outfile.write(f'\n\nAverage delay in queue{avg_delay:11.3f} minutes\n\n')
+        self.outfile.write(f'Average number in queue{avg_num_in_q:10.3f}\n\n')
+        self.outfile.write(f'Server utilization{server_util:15.3f}\n\n')
+        self.outfile.write(f'Time simulation ended{self.sim_time:12.3f} minutes')
+    
+    def update_time_avg_stats(self):
+        '''update time-average statistical accumulators.'''
+        # compute time since last event, and update last-event-time marker
+        time_since_last_event = self.sim_time - self.time_last_event
+        self.time_last_event = self.sim_time
+        
+        # update area under number-in-queue function
+        self.area_num_in_q += self.num_in_q * time_since_last_event
+        
+        # update area under server-busy indicator function
+        self.area_server_status += self.server_status * time_since_last_event
+    
+    def expon(self, mean):
+        '''probability distribution function
+        generate an exponential random variate.
+        '''
+        return -mean * math.log(random.random())
+    
+    def run_server(self):
+        '''run the entire simulation.'''
+        # read input parameters, delimited by space char
+        line = self.infile.readline().strip()
+        params = line.split()
+        self.mean_interarrival = float(params[0])
+        self.mean_service = float(params[1])
+        self.num_delays_required = int(params[2])
+        
+        # write report heading and input parameters
+        self.outfile.write('Single-server queueing system\n\n')
+        self.outfile.write(f'Mean interarrival time{self.mean_interarrival:11.3f} minutes\n\n')
+        self.outfile.write(f'Mean service time{self.mean_service:16.3f} minutes\n\n')
+        self.outfile.write(f'Number of customers{self.num_delays_required:14d}\n\n')
+        
+        # initialize the simulation
+        self.initialize()
+        
+        # run the simulation while more delays are still needed
+        while self.num_custs_delayed < self.num_delays_required:
+            # determine the next event
+            self.timing()
+            
+            # update time-average statistical accumulators
+            self.update_time_avg_stats()
+            
+            # invoke the appropriate event function
+            if self.next_event_type == 1:
+                self.arrive()
+            elif self.next_event_type == 2:
+                self.depart()
+
+        # generate the report
+        self.report()
+
+def main():
+    # open file to read in variables from and output file to write to
+    with open('q_sim.in', 'r') as file_in, open('q_sim.out', 'w') as file_out:
+        # create simulation instance
+        queue_sim = SingleServerQ(file_in, file_out)
+
+        # run the simulation
+        queue_sim.run_server()
+
+
+if __name__ == '__main__':
+    main()
