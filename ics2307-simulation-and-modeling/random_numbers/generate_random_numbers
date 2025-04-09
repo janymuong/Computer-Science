@@ -1,0 +1,71 @@
+#!/usr/bin/python3
+
+'''
+SCT211-0848/2018 - Jany Muong
+ICS 2307: Simulation and Modeling - Random Number Generator
+B.Sc. Computer Science 3.2(January - April/2025)
+'''
+import random
+import pandas as pd
+
+
+def get_face(random_number): # takes in random number
+    '''function to determine face based on random number
+    categorizes the numbers into faces based on the intervals listed out below:
+
+    face 1: 0 to 1/6
+    face 2: 1/6 to 2/6
+    face 3: 2/6 to 3/6
+    face 4: 3/6 to 4/6
+    face 5: 4/6 to 5/6
+    face 6: 5/6 to 1.0
+    '''
+    
+    for i in range(6):
+        if random_number < (i + 1) / 6: # faces start at 1
+            return i + 1
+
+# generate and store raw random numbers | random.random()(from python - uses Mersenne Twister as core generator) 
+# gets me flaoting point numbers [0.0, 1.0); eg 0.0 <= 0.3108 < 1.0
+raw_numbers = [random.random() for _ in range(1000)]
+
+# sample random numbers(to see what they look like)
+print("\nSample Random Numbers and their Die Faces:")
+print("=" * 64)
+for i, num in enumerate(raw_numbers[:7], 1): # 7 numbers
+    face = get_face(num)
+    # f-string: face, the random number and interval; 
+    print(f"Random #{i}: {num:.4f} w/ a Face {face} → falls in interval {face-1}/6 to {face}/6")
+print("=" * 64)
+
+# convert all numbers to die faces
+rolls = [get_face(num) for num in raw_numbers]
+# compute frequencies
+frequencies = pd.Series(rolls).value_counts().sort_index() # how many times a face appears and sort by face/not freqquency
+
+# create table
+data = {
+    'Face': list(range(1, 7)),
+    'Frequency': [frequencies.get(i, 0) for i in range(1, 7)], # frequency for each face
+}
+
+df_sim = pd.DataFrame(data)
+
+# compute percentages
+df_sim['Percentage'] = df_sim['Frequency'] / 10 # or (df_sim['Frequency'] / 1000) * 100
+df_sim['Percentage'] = df_sim['Percentage'].apply(lambda x: f"{x:.1f}%") # to 1d.p
+
+# print stats/analysis
+print("\nDie Simulation - for 1000 rolls:")
+print("=" * 32) #  separator
+print(df_sim.to_string(index=False))  # remove the index column (the 0,1,2,3... on the left) with index=False
+print("-" * 32)  # separator line before total
+
+# get the position of 'Frequency' column in the header(to align total of fequency Σf w/ it)
+header = str(df_sim.to_string(index=False)).split('\n')[0]
+freq_pos = header.find('Frequency')
+
+# create the total row with alignment
+total_freq = ' ' * freq_pos + f"Σf {df_sim['Frequency'].sum():<10} {'100.0%'}"
+print(total_freq)
+print("=" * 32)
