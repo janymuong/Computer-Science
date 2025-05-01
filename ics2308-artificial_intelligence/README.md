@@ -1,6 +1,6 @@
 # `diagnosys`
 
-###  query basic dacts
+###  query basic facts
 *(each entity has 2+ properties.)*  - is like props in react
 ```prolog
 % get all patients with allergies  
