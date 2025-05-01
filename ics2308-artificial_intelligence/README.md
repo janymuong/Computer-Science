@@ -5,26 +5,26 @@
 ```prolog
 % get all patients with allergies  
 ?- patient(ID, Name, _, _, _, _, _, Allergies), Allergies \= [].  
-% expected: John Doe (Penicillin), Alice Johnson (Aspirin), etc.  
+% expected: john doe (penicillin), alice johnson (aspirin), etc.  
 
 % list all oncologists  
 ?- doctor(_, Name, 'Oncology', _, _).  
-% expected: Dr. Patel  
+% expected: dr. patel  
 ```
 
 
 
 ### **query r|ships**  
 ```prolog
-% who prescribed Insulin Therapy?  
+% who prescribed insulin therapy?  
 ?- prescribed(Patient, 'Insulin Therapy', _, _, _),  
    diagnosed_with(Patient, _, _, DoctorID),  
    doctor(DoctorID, Doctor, _, _, _).  
-% expected: Jane Smith (Dr. Patel)  
+% expected: jane smith (dr. patel)  
 
-% find drug interactions for Beta Blockers  
+% find drug interactions for beta blockers  
 ?- drug_interaction('Beta Blockers', Drug2, Severity).  
-% expected: Insulin (Moderate), Inhaler (Low)  
+% expected: insulin (moderate), inhaler (low)  
 ```
 
 ### **derived knowledge**  
@@ -35,7 +35,7 @@
 
 % check for dangerous prescriptions  
 ?- dangerous_prescription(3).  
-% expected: WARNING: 3 may have dangerous interaction/allergy with Aspirin  
+% expected: WARNING: 3 may have dangerous interaction/allergy with aspirin  
 ```
 
 ### **complex queries**  
@@ -44,7 +44,7 @@
 ?- chronic_patient(Patient),  
    diagnosed_with(Patient, _, _, DoctorID),  
    senior_doctor(Doctor).  
-% expected: John Doe (Dr. Williams), Jane Smith (Dr. Patel)  
+% expected: john doe (dr. williams), jane smith (dr. patel)  
 
 % list today's appointments (mock date: 2023-04-15)  
 ?- todays_appointments(Doctor, Patient, Time).  
