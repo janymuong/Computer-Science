@@ -1,0 +1,16 @@
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\_01_FormSizeSetter.DemoForm.resources
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.vbproj.GenerateResource.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.AssemblyInfoInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.AssemblyInfo.vb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\bin\Debug\net8.0-windows\01_FormSizeSetter.exe
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\bin\Debug\net8.0-windows\01_FormSizeSetter.deps.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\bin\Debug\net8.0-windows\01_FormSizeSetter.runtimeconfig.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\bin\Debug\net8.0-windows\01_FormSizeSetter.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\bin\Debug\net8.0-windows\01_FormSizeSetter.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\refint\01_FormSizeSetter.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\01_FormSizeSetter.genruntimeconfig.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\01_FormSizeSetter\obj\Debug\net8.0-windows\ref\01_FormSizeSetter.dll

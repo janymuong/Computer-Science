@@ -1,0 +1,16 @@
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\_03_SavingsAccountCalculator.SavingsAccountForm.resources
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.vbproj.GenerateResource.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.AssemblyInfoInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.AssemblyInfo.vb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\bin\Debug\net8.0-windows\03_SavingsAccountCalculator.exe
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\bin\Debug\net8.0-windows\03_SavingsAccountCalculator.deps.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\bin\Debug\net8.0-windows\03_SavingsAccountCalculator.runtimeconfig.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\bin\Debug\net8.0-windows\03_SavingsAccountCalculator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\bin\Debug\net8.0-windows\03_SavingsAccountCalculator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\refint\03_SavingsAccountCalculator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\03_SavingsAccountCalculator.genruntimeconfig.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\03_SavingsAccountCalculator\obj\Debug\net8.0-windows\ref\03_SavingsAccountCalculator.dll

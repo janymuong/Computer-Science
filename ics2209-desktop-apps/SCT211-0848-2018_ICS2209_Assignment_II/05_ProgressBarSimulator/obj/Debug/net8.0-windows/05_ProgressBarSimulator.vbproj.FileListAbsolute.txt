@@ -1,0 +1,16 @@
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\bin\Debug\net8.0-windows\05_ProgressBarSimulator.exe
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\bin\Debug\net8.0-windows\05_ProgressBarSimulator.deps.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\bin\Debug\net8.0-windows\05_ProgressBarSimulator.runtimeconfig.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\bin\Debug\net8.0-windows\05_ProgressBarSimulator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\bin\Debug\net8.0-windows\05_ProgressBarSimulator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.vbproj.GenerateResource.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.AssemblyInfoInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.AssemblyInfo.vb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\refint\05_ProgressBarSimulator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\05_ProgressBarSimulator.genruntimeconfig.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\ref\05_ProgressBarSimulator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\05_ProgressBarSimulator\obj\Debug\net8.0-windows\_05_ProgressBarSimulator.ProgressSimulationForm.resources

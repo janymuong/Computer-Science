@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vC9p4O3Mbv4yQEsBoplBRPYNNT/tJYAtI+8ZqKjXQld/yNT+fLSKfe9z1BOdAQ0D2HfDFvt9uWSLZalhS7Feuw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\merou\\goop\\HeFits\\HeFits.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\merou\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\merou\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\merou\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

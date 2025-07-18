@@ -1,0 +1,16 @@
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\_06_SalesCommissionCalculator.SalesCommissionForm.resources
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.vbproj.GenerateResource.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.AssemblyInfoInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.AssemblyInfo.vb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\bin\Debug\net8.0-windows\06_SalesCommissionCalculator.exe
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\bin\Debug\net8.0-windows\06_SalesCommissionCalculator.deps.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\bin\Debug\net8.0-windows\06_SalesCommissionCalculator.runtimeconfig.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\bin\Debug\net8.0-windows\06_SalesCommissionCalculator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\bin\Debug\net8.0-windows\06_SalesCommissionCalculator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\refint\06_SalesCommissionCalculator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\06_SalesCommissionCalculator.genruntimeconfig.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\06_SalesCommissionCalculator\obj\Debug\net8.0-windows\ref\06_SalesCommissionCalculator.dll

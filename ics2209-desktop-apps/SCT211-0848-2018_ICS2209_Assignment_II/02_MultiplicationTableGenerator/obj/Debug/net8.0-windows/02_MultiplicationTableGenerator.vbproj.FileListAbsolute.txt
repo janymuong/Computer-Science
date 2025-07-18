@@ -1,0 +1,16 @@
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\_02_MultiplicationTableGenerator.MultiplicationTableForm.resources
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.vbproj.GenerateResource.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.AssemblyInfoInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.AssemblyInfo.vb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\bin\Debug\net8.0-windows\02_MultiplicationTableGenerator.exe
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\bin\Debug\net8.0-windows\02_MultiplicationTableGenerator.deps.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\bin\Debug\net8.0-windows\02_MultiplicationTableGenerator.runtimeconfig.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\bin\Debug\net8.0-windows\02_MultiplicationTableGenerator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\bin\Debug\net8.0-windows\02_MultiplicationTableGenerator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\refint\02_MultiplicationTableGenerator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\02_MultiplicationTableGenerator.genruntimeconfig.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\02_MultiplicationTableGenerator\obj\Debug\net8.0-windows\ref\02_MultiplicationTableGenerator.dll

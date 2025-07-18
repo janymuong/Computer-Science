@@ -1,0 +1,17 @@
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp_GUI.DetermineGradeForm.resources
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.vbproj.GenerateResource.cache
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.AssemblyInfoInputs.cache
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.AssemblyInfo.vb
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.sourcelink.json
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\bin\Debug\net8.0-windows\GradeApp-GUI.exe
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\bin\Debug\net8.0-windows\GradeApp-GUI.deps.json
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\bin\Debug\net8.0-windows\GradeApp-GUI.runtimeconfig.json
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\bin\Debug\net8.0-windows\GradeApp-GUI.dll
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\bin\Debug\net8.0-windows\GradeApp-GUI.pdb
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.dll
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\refint\GradeApp-GUI.dll
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.pdb
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\GradeApp-GUI.genruntimeconfig.cache
+C:\Users\merou\goop\vb_basics\GradeApp-GUI\obj\Debug\net8.0-windows\ref\GradeApp-GUI.dll

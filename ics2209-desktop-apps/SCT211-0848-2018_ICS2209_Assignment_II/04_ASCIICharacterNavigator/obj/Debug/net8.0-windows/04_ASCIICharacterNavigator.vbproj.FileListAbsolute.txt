@@ -1,0 +1,16 @@
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\_04_ASCIICharacterNavigator.CharacterFollowerForm.resources
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.vbproj.GenerateResource.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.AssemblyInfoInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.AssemblyInfo.vb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\bin\Debug\net8.0-windows\04_ASCIICharacterNavigator.exe
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\bin\Debug\net8.0-windows\04_ASCIICharacterNavigator.deps.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\bin\Debug\net8.0-windows\04_ASCIICharacterNavigator.runtimeconfig.json
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\bin\Debug\net8.0-windows\04_ASCIICharacterNavigator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\bin\Debug\net8.0-windows\04_ASCIICharacterNavigator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\refint\04_ASCIICharacterNavigator.dll
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.pdb
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\04_ASCIICharacterNavigator.genruntimeconfig.cache
+C:\Users\merou\goop\SCT211-0848-2018_ICS2209_Assignment_II\04_ASCIICharacterNavigator\obj\Debug\net8.0-windows\ref\04_ASCIICharacterNavigator.dll
