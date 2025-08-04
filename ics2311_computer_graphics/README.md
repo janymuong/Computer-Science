@@ -76,7 +76,7 @@ compile and run executable:
 ```sh 
 gcc hello_line.c -o hello_line -lfreeglut -lglew32 -lglu32 -lopengl32 -lgdi32
 
-./hello_line.exe
+./hello_line
 ```
 you get a display window that has a white horizontal line.
 
