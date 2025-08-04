@@ -1,14 +1,14 @@
 # OpenGL Setup - Windows
 
 > ## works on windows 11 and 10  
-> NOTE: this should be an easier setup in a shell and doestn require copying of files and modifying paths for `freeglut` and `glew` and/or moving **libraries** around.
+> **NOTE**: this should be an easier setup in a shell and doestn require copying of files and modifying paths for `freeglut` and `glew` and/or moving **libraries** around.
 
 opengl is already installeed in your system(windows): run the file provided by dr karanja mwangi: glinfo2.exe should show you opengl version 4.6 and then driver of your graphics card
 
 I have listed out the steps below - steps to go about the setup:
 1. read about mingw64 - https://www.mingw-w64.org/
 
-2. download mingw64/msys2 and pacman - from https://www.msys2.org/ ie this file msys2-x86_64-20250221.exe
+2. download mingw64/msys2 and `pacman`(package manager for arch) - from https://www.msys2.org/ ie this file msys2-x86_64-20250221.exe
 
 3. ### install freeglut and glew  
 ```sh
@@ -20,16 +20,16 @@ I have listed out the steps below - steps to go about the setup:
     
     ```sh
     export PATH=$PATH:/c/Users/YourUsername/AppData/Local/Programs/Microsoft\ VS\ Code/bin
-    # you can add the line above to `bashrc` afterwards if this works
     ```
 
     so you can open programs this way: 
     ```sh
     code filename.extension
+    # if this commandline works you can add the line(shell export) above to `bashrc` afterwards.
     ``` 
 
 
-4. TEST SETUP
+4. ### TEST SETUP  
 you can use this file to ascertain the setup works:
 
 ```sh
@@ -80,7 +80,7 @@ gcc hello_line.c -o hello_line -lfreeglut -lglew32 -lglu32 -lopengl32 -lgdi32
 ```
 you get a display window that has a white horizontal line.
 
-gcc can be installed in msys2 using 
+`gcc` can be installed in msys2 using 
 
 ```sh
 pacman -S mingw-w64-x86_64-gcc
@@ -89,5 +89,5 @@ gcc --version
 
  
 
-disclaimer: 
+### disclaimer:
 you might run into errors having to do w/ your machine. plus I dont know how good this setup will be going forward keeping in mind I dont know what is ahead for the unit/workload or whether there is a better/ more efficient way - eg using the IDEs that we have just avoided with this setup.
