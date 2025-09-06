@@ -4,7 +4,7 @@
 
 ### dependencies
 
-- OpenGL: the open graphics library. installable via `mesa` package  
+- OpenGL: the open graphics library. installable via `mesa` package on arch linux(find the equivalent of it for your system)  
 - GLUT: opengl utility toolkit.  
 - GLEW: opengl extension wrangler library.
 
