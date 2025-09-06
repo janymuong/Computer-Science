@@ -1,6 +1,38 @@
-# OpenGL Setup - Windows
+# OpenGL Setup
+## Linux:
+> if you have a linux machine, this should work out of the box:
 
-> ## works on windows 11 and 10  
+### dependencies
+
+- OpenGL: the open graphics library. installable via `mesa` package  
+- GLUT: opengl utility toolkit.  
+- GLEW: opengl extension wrangler library.
+
+```sh
+# arch
+# sudo pacman -Syu
+sudo pacman -S mesa freeglut glew
+
+```
+### compile your programs:
+
+```zsh
+# compile and run programs this way;
+gcc a_fruit_bars.c -o a_fruit_bars -lGL -lGLU -lglut -lGLEW
+./a_fruit_bars
+```
+> where:  
+> gcc: compiler for c programs.  
+a_fruit_bars.c: the source file you want to compile.  
+-o a_fruit_bars: executable file.  
+-lGL -lGLU -lglut -lGLEW: the options that link the libraries for OpenGL, GLU, GLUT, and GLEW.
+
+
+----
+
+## OpenGL Setup - Windows
+
+> ### works on windows 11 and 10  
 > **NOTE**: this should be an easier setup in a shell and doestn require copying of files and modifying paths for `freeglut` and `glew` and/or moving **libraries** around.
 
 opengl is already installeed in your system(windows): run the file provided by dr karanja mwangi: glinfo2.exe should show you opengl version 4.6 and then driver of your graphics card
@@ -10,12 +42,12 @@ I have listed out the steps below - steps to go about the setup:
 
 2. download **mingw64/msys2** and `pacman`(package manager for arch) - from https://www.msys2.org/ ie this file msys2-x86_64-20250221.exe
 
-3. ### install freeglut and glew  
+3. #### install freeglut and glew  
     ```sh
     pacman -S mingw-w64-x86_64-freeglut
     pacman -S mingw-w64-x86_64-glew
     ```
-4. ### text editor or IDE: 
+4. #### text editor or IDE: 
     if you dislike IDEs eg options of codeblocks, eclipse CDT, visual studio etc; you can use default nano etxt editor or vscode inside msys/the terminal of it:
     
     ```sh
@@ -29,7 +61,7 @@ I have listed out the steps below - steps to go about the setup:
     ``` 
 
 
-4. ### TEST SETUP  
+4. #### test setup
     you can use this file to ascertain the setup works:
 
     ```sh
@@ -89,5 +121,5 @@ I have listed out the steps below - steps to go about the setup:
 
  
 
-### disclaimer:
+#### disclaimer:
 you might run into errors having to do w/ your machine. plus I dont know how good this setup will be going forward keeping in mind I dont know what is ahead for the unit/workload or whether there is a better/ more efficient way - eg using the IDEs that we have just avoided with this setup.
