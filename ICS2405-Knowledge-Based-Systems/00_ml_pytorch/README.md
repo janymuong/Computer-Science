@@ -1,2 +1,2 @@
-# ML in Pytorch
+# ML in PyTorch
 > (machine) learning systems
