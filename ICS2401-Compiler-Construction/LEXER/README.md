@@ -7,12 +7,17 @@
 - test files: `test_words.txt`, `test_abc.txt`, `test_verbs.txt`
 - `Makefile` - for easy compilation
 
+## flex:
+> install flex on your gnu/linux environment:  
+> use the equivalent of your distro; if on windows your bad decision and you have to deal with yourself :)  
+
+```sh
+# get flex;
+sudo pacman -S flex 
+```
 ## compile + run executables:
 ```bash
 # method 1: using make - look at file paths first for this otherwise use method 2
-
-# get flex;
-sudo pacman -S flex # use the equivalent of your gnu/linux distro; if on windows your bad decision and you have to deal with yourself :)
 
 make          # compile all
 make test     # run tests
