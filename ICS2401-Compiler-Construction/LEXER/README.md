@@ -10,7 +10,10 @@
 ## compile + run executables:
 ```bash
 # method 1: using make - look at file paths first for this otherwise use method 2
+
+# get flex;
 sudo pacman -S flex # use the equivalent of your gnu/linux distro; if on windows your bad decision and you have to deal with yourself :)
+
 make          # compile all
 make test     # run tests
 
@@ -19,8 +22,33 @@ flex 0-word_analyzer.l
 gcc lex.yy.c -o word_analyzer -lfl
 ./word_analyzer < test_words.txt
 ```
-#### word count [example]:
-![alt text](./analyzer.png)
+#### verb recognizer [example]:
+```sh
+┌─[j@archlinux] - [~]
+└─[$] <> flex 2-recognizer.l
+┌─[j@archlinux] - [~]
+└─[$] <> gcc lex.yy.c -o recognizer -lfl              
+┌─[j@archlinux] - [~]
+└─[$] <> ./recognizer < test_verbs.txt
+I am near going to japan.
+mikasa ackerman has been terribly mistaken - I wil not say why.
+me and my group do love the c language.
+we will go to japan tomorrow.
+this is not a verb: hashira
+
+
+VERBS FOUND:
+  - am
+  - has
+  - been
+  - do
+  - will
+  - go
+  - is
+┌─[j@archlinux] - [~]
+└─[$] <>
+```
+
 
 > **NOTE**:  
 > - `-lfl` links the flex library: contains default implementations
