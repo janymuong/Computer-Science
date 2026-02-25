@@ -1,0 +1,19 @@
+// Anime Star Schema
+digraph {
+	dpi=300 nodesep=0.2 rankdir=TB ranksep=0.3 size="10,14"
+	node [fontsize=9 height=0.5 shape=box width=1.5]
+	edge [fontsize=8]
+	v_dim_user_with_age [label=<<B>v_dim_user_with_age</B><BR/>user_key : integer\nuser_id : integer\nusername : character varying\njoin_date : date\njoin_year : integer\njoin_month : integer\naccount_age_days : integer>]
+	dim_anime [label=<<B>dim_anime</B><BR/>anime_key : integer\nanime_id : integer\ntitle : character varying\nrelease_year : integer\nepisodes : integer\nstatus : character varying\nstudio_name : character varying\nstudio_country : character varying\nvalid_from : date\nvalid_to : date\nis_current : boolean\ncreated_at : timestamp without time zone>]
+	bridge_anime_genre [label=<<B>bridge_anime_genre</B><BR/>anime_key : integer\ngenre_key : integer>]
+	dim_genre [label=<<B>dim_genre</B><BR/>genre_key : integer\ngenre_name : character varying>]
+	dim_time [label=<<B>dim_time</B><BR/>time_key : integer\nfull_date : date\nyear : integer\nquarter : integer\nquarter_name : character varying\nmonth : integer\nmonth_name : character varying\nweek : integer\nday_of_week : integer\nday_name : character varying\nis_weekend : boolean>]
+	dim_user [label=<<B>dim_user</B><BR/>user_key : integer\nuser_id : integer\nusername : character varying\njoin_date : date\njoin_year : integer\njoin_month : integer>]
+	fact_review [shape=box3d]
+	fact_review [label=<<B>fact_review</B><BR/>review_key : bigint\nreview_id : integer\ntime_key : integer\nuser_key : integer\nanime_key : integer\nrating : integer\nhas_comment : boolean\nreview_count : integer\nrating_sum : integer\nloaded_at : timestamp without time zone>]
+	bridge_anime_genre -> dim_anime [label="anime_key → anime_key"]
+	bridge_anime_genre -> dim_genre [label="genre_key → genre_key"]
+	fact_review -> dim_time [label="time_key → time_key"]
+	fact_review -> dim_user [label="user_key → user_key"]
+	fact_review -> dim_anime [label="anime_key → anime_key"]
+}

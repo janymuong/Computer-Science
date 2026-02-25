@@ -1,0 +1,18 @@
+// Anime Star Schema
+graph {
+	overlap=false root=fact_review splines=true
+	node [fillcolor=lightblue fontname=Arial shape=box style="rounded,filled"]
+	edge [arrowhead=normal color=gray]
+	v_dim_user_with_age [label=<<B>v_dim_user_with_age</B><BR/>username>]
+	dim_anime [label=<<B>dim_anime</B><BR/>title<BR/>anime_key>]
+	bridge_anime_genre [label=<<B>bridge_anime_genre</B><BR/>anime_key<BR/>genre_key>]
+	dim_genre [label=<<B>dim_genre</B><BR/>genre_name<BR/>genre_key>]
+	dim_time [label=<<B>dim_time</B><BR/>time_key<BR/>year>]
+	dim_user [label=<<B>dim_user</B><BR/>user_key<BR/>username>]
+	fact_review [label=<<B>fact_review</B><BR/>time_key<BR/>anime_key<BR/>review_key<BR/>rating<BR/>user_key> fillcolor=gold shape=box3d]
+	bridge_anime_genre -- dim_anime [label=anime_key fontsize=8]
+	bridge_anime_genre -- dim_genre [label=genre_key fontsize=8]
+	fact_review -- dim_time [label=time_key fontsize=8]
+	fact_review -- dim_user [label=user_key fontsize=8]
+	fact_review -- dim_anime [label=anime_key fontsize=8]
+}
