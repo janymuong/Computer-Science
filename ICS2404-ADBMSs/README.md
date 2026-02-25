@@ -1,44 +1,44 @@
-# **ICS 2404: Advanced Database Systems – Anime Database Implementation**  
+# **ICS 2404: Advanced Database Systems – anime database**  
 ### *ddbms design, distribution, analysis, optimization, concurrency, and OLAP*  
 
-**Group A7**
-**Date:** February 2026  
-**Platform:** Arch Linux, PostgreSQL 18.2  
+**group a7**
+**date:** february 2026  
+**platform:** arch linux, postgresql 18.2  
 
 ---
 
 ## **1. CONTEXT**  
-This project implements a complete database solution for an anime‑centric application. It fulfills the six core requirements of the assignment:  
+implements a complete database solution for an anime‑centric application. we satisfy these requirements of the assignment:  
 
-1. **Create DBMS** – Design and populate a relational database (anime, characters, reviews, watchlists).  
-2. **Distribute** – Set up primary‑secondary streaming replication for high availability and read scaling.  
-3. **Analyze Data** – Execute analytical queries to extract insights.  
-4. **Optimize Queries** – Improve performance using indexes, query rewriting, and `EXPLAIN` analysis.  
-5. **Concurrency Control** – Demonstrate MVCC, isolation levels, locking, and deadlock handling.  
-6. **OLAP Tools** – Build a star schema and perform multidimensional analysis with `ROLLUP`/`CUBE`.
+1. **Create DBMS** – design and populate a relational database (anime, characters, reviews, watchlists).  
+2. **Distribute** – set up primary‑secondary streaming replication for high availability and read scaling.  
+3. **Analyze Data** – execute analytical queries to extract insights.  
+4. **Optimize Queries** – improve performance using indexes, query rewriting, and `EXPLAIN` analysis.  
+5. **Concurrency Control** – demonstrate MVCC, isolation levels, locking, and deadlock handling.  
+6. **OLAP Tools** – build a star schema(or variant of it) and perform multidimensional analysis with `ROLLUP`/`CUBE`.
 
-All steps are implemented on **Arch Linux** with **PostgreSQL 18.2**. The database is populated with ~200 000 reviews, 300 000 watchlist entries, and supporting data, including favourite anime: *Attack on Titan*, *Jujutsu Kaisen*, and *Naruto*.
+all steps are implemented on **arch linux** with **postgresql 18.2**; the database is populated with ~200 000 reviews, 300 000 watchlist entries, and supporting data, including favourite anime: *attack on titan*, *jujutsu kaisen*, and *naruto*.
 
 ---
 
-## **2. Part 1: Database Design and Implementation**  
+## **2. Part 1: DB**  
 
 ### **2.1. Conceptual and Logical Design**  
-Following Connolly & Begg (Ch. 16–17), we designed an ER model with these entities:  
+following Connolly & Begg (Ch. 16–17), we designed an ER model with these entities:  
 - **anime**, **studio**, **genre** (with many‑to‑many relationship `anime_genre`)  
 - **character**, **episode**  
 - **user**, **review**, **watchlist**  
 
 **DDL Script** (executed on primary):  
 ```sql
--- Full schema creation is in `schema.sql` (see Appendix).  
--- Key tables:
+-- full schema creation is in `schema.sql` (ommitted).  
+-- core tables:
 CREATE TABLE anime.anime ( anime_id SERIAL PRIMARY KEY, title VARCHAR(200) NOT NULL, ... );
 CREATE TABLE anime.review ( review_id SERIAL PRIMARY KEY, user_id INT REFERENCES anime.user, anime_id INT REFERENCES anime.anime, rating INT CHECK (rating BETWEEN 1 AND 10), ... );
--- All foreign keys and constraints are defined.
+-- all foreign keys and constraints are defined.
 ```
 
-### **2.2. Fast Population with Python + Faker**  
+### **2.2. Fast Population with Python + `Faker`**  
 A Python script `populate_anime_db.py` (attached) generates and inserts:  
 - 10 000 users  
 - 200 000 reviews  
@@ -46,19 +46,19 @@ A Python script `populate_anime_db.py` (attached) generates and inserts:
 - 26 anime (6 favourites + 20 random)  
 - 107 characters, episodes for each anime, etc.  
 
-**Key techniques:**  
-- Use of `psycopg2` with batch commits every 1000/10000 rows for speed.  
-- Exception handling for `UNIQUE` violations (users, reviews, watchlist).  
-- Random but realistic data via `Faker`.  
+**techniques:**  
+- use of `psycopg2` with batch commits every 1000/10000 rows for speed.  
+- exception handling for `UNIQUE` violations (users, reviews, watchlist).  
+- random but realistic data via `Faker`.  
 
 **Execution (as `postgres` user):**  
 ```bash
 sudo -u postgres python /tmp/populate_anime_db.py
 ```
-Output confirms successful insertion with progress messages.
+output confirms successful insertion with progress messages.
 
 ### **2.3. Indexes for Initial Performance**  
-Before analysis, we created basic indexes on foreign keys and commonly filtered columns:  
+before analysis, we create basic indexes on foreign keys and commonly filtered columns:  
 ```sql
 CREATE INDEX idx_review_anime ON anime.review(anime_id);
 CREATE INDEX idx_review_user ON anime.review(user_id);
@@ -70,8 +70,8 @@ CREATE INDEX idx_anime_release_year ON anime.anime(release_year);
 
 ## **3. Part 2: Distribution – Primary‑Secondary Replication**  
 
-### **3.1. Configuration (Connolly & Begg Ch. 25)**  
-We set up **streaming replication** with a primary (port 5432) and a standby (port 5433) on the same machine.  
+### **3.1. Configuration**  
+we set up **streaming replication** with a primary (port 5432) and a standby (port 5433) on the same machine.  
 
 **Primary `postgresql.conf`:**  
 ```conf
@@ -127,20 +127,20 @@ SELECT * FROM anime.anime LIMIT 5;  -- returns data (after granting permissions)
 ```
 
 **Permissions on standby:**  
-Because roles are replicated, we granted `SELECT` on the primary:  
+because roles are replicated, we granted `SELECT` on the primary:  
 ```sql
 GRANT USAGE ON SCHEMA anime TO replicator;
 GRANT SELECT ON ALL TABLES IN SCHEMA anime TO replicator;
 ```
-These changes propagate, allowing read‑only queries on the standby.
+these changes propagate, allowing read‑only queries on the standby.
 
-✅ **Replication is active.** The standby can serve analytical queries without affecting the primary.
+**Replication is active;** the standby can serve analytical queries without affecting the primary.
 
 ---
 
 ## **4. Part 3: Data Analysis – Analytical Queries**  
 
-All queries were run on the **standby** to avoid load on the primary. Below are sample results (truncated for brevity).
+all queries were run on the **standby** to avoid load on the primary; below are sample results (truncated for brevity).
 
 ### **4.1. Basic Analytics**  
 
@@ -225,7 +225,7 @@ SELECT genre, title, ROUND(avg,2) FROM ranked WHERE rn <= 3 ORDER BY genre, rn;
 
 ## **5. Part 4: Query Optimization**  
 
-We focused on the **top anime query (Q1)**, which joins `anime` and `review` and aggregates.  
+we focused on the **top anime query (Q1)**, which joins `anime` and `review` and aggregates.  
 
 ### **5.1. Before Optimization – EXPLAIN Output**  
 ```sql
@@ -282,7 +282,7 @@ EXPLAIN shows a potential index scan if an index on `review_date` existed (we ad
 
 ## **6. Part 5: Concurrency Control – MVCC & Locking**  
 
-All demos performed on the **primary** using two `psql` sessions (Terminal A and B).
+all demos performed on the **primary** using two `psql` sessions (Terminal A and B).
 
 ### **6.1. MVCC – Read Committed vs. Repeatable Read**  
 
@@ -384,7 +384,8 @@ Partial output:
  NULL  | NULL       | 8.23    | 196635 -- grand total
 ```
 
-**CUBE – rating distribution by anime and user join year:**  
+**CUBE – rating distribution by anime and user join year:**
+> actual cube sql might be different in the olap.ipynb(notebook)  
 ```sql
 SELECT a.title, EXTRACT(YEAR FROM u.join_date) AS join_year, AVG(f.rating), COUNT(*)
 FROM dw.fact_review f
@@ -406,46 +407,18 @@ GROUP BY a.anime_id, a.title, d.year, d.month;
 CREATE INDEX ON dw.mv_anime_monthly (anime_id, year, month);
 ```
 
-Querying the materialized view is instant. Refresh when underlying data changes:  
+querying the materialized view is instant. Refresh when underlying data changes:  
 ```sql
 REFRESH MATERIALIZED VIEW CONCURRENTLY dw.mv_anime_monthly;
 ```
 
 ---
-
-## **8. Conclusion and Demo Notes**  
-
-All six assignment tasks are successfully implemented and verified. The system demonstrates:  
-- A fully functional anime database with realistic data.  
-- Streaming replication for read scaling.  
-- Analytical queries yielding business insights.  
-- Query optimisation with indexes and `EXPLAIN`.  
-- Concurrency control mechanisms (MVCC, isolation, deadlock).  
-- A star schema for OLAP with rollup/cube queries.
-
-**For the live demo:**  
-1. Start both PostgreSQL instances.  
-2. Show replication status (`pg_stat_replication`).  
-3. Run analytical queries on standby.  
-4. Demonstrate optimisation by toggling indexes and showing `EXPLAIN` before/after.  
-5. Perform concurrency demos in two terminals.  
-6. Query the star schema and materialized view.
-
-All scripts, configuration files, and this report are available in the project folder.
-
----
-
-## **Appendix: Key Files**  
-
-- `schema.sql` – DDL for all tables.  
-- `populate_anime_db.py` – Python population script.  
+## **Appendix: Files**
+- `populate_anime_db.py` – python population script.  
 - `postgresql.conf.primary` / `postgresql.conf.standby` – configuration files.  
 - `pg_hba.conf` – client authentication.  
-- `analysis_queries.sql` – all analytical queries used.  
-- `optimization.sql` – index creation and EXPLAIN logs.  
-- `concurrency_demo.sql` – commands for MVCC and deadlock.  
-- `olap_star.sql` – star schema creation and queries.  
+- `olap.ipynb` – notebook for olap ops+visualization  
 
 ---
 
-**End of Report.**
+**End**
