@@ -1,6 +1,3 @@
----
-
----
 ## datawarehousing + olap (for shows)
 ### *this is a snowflake schema setup*
 
@@ -371,6 +368,5 @@ ORDER BY review_count DESC;
 ```
 
 ---
-#### tools: matplotlib pandas psycopg2-binary sqlalchemy
-
-
+#### jupyter lab environment
+> tools: matplotlib pandas psycopg2-binary sqlalchemy
